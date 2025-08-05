@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Free Photo Resizer for Indian Competitive Exams | NEET, JEE, UPSC Photo Size Tool</title>
+    <meta name="description" content="Free online photo resizer for Indian competitive exams. Resize photos and signatures for NEET, JEE Main, UPSC, SSC, CAT, GATE, and other exams instantly. Perfect passport size photos in seconds.">
+    <meta name="keywords" content="photo resize, exam photo requirements, NEET photo size, JEE photo size, UPSC photo requirements, passport size photo, competitive exam photo resizer, free photo resizer tool">
+    <meta name="author" content="Exam Photo Resizer">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Free Photo Resizer for Indian Competitive Exams">
+    <meta property="og:description" content="Resize photos for NEET, JEE, UPSC, and other Indian competitive exams. Free, fast, and accurate photo resizing tool.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://examphotoResizer.com">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Free Photo Resizer for Indian Competitive Exams">
+    <meta name="twitter:description" content="Resize photos for NEET, JEE, UPSC, and other exams instantly. Free online tool.">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Exam Photo Resizer",
+      "description": "Free online photo resizer for Indian competitive exams",
+      "url": "https://examphotoResizer.com",
+      "applicationCategory": "UtilityApplication",
+      "operatingSystem": "Web Browser",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "INR"
+      },
+      "featureList": [
+        "NEET photo resize",
+        "JEE Main photo resize",
+        "UPSC photo resize",
+        "Passport size photo maker",
+        "Signature resize tool"
+      ]
+    }
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L3PFGLD31Z"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-L3PFGLD31Z');
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Compact Header -->
+    <header class="warm-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-brand">
+                    <h1 class="header-title">Form Photo Resizer</h1>
+                    <p class="header-subtitle">Free tool for Indian competitive exams</p>
+                </div>
+                <div class="quick-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Exams</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">50K+</span>
+                        <span class="stat-label">Students</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">Free</span>
+                        <span class="stat-label">Forever</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Warm Hero Section -->
+    <section class="warm-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title">Resize photos for NEET, JEE, UPSC & other exams instantly</h2>
+                <div class="hero-benefits">
+                    <span class="benefit-tag">✨ Perfect Size</span>
+                    <span class="benefit-tag">⚡ Instant Process</span>
+                    <span class="benefit-tag">🔒 100% Secure</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Tool Section - Above the Fold -->
+    <main class="main-tool-warm">
+        <div class="container">
+            <div class="tool-warm-layout">
+
+                <!-- Step 1: Exam Selection -->
+                <div class="tool-card exam-selection-card">
+                    <div class="card-header">
+                        <div class="step-indicator step-orange">1</div>
+                        <h3>Select Your Exam</h3>
+                    </div>
+                    <div class="card-body">
+                        <select id="examSelect" class="warm-select">
+                            <option value="">Choose Your Exam</option>
+                            <option value="NEET">NEET</option>
+                            <option value="JEE Main">JEE Main</option>
+                            <option value="UPSC">UPSC</option>
+                            <option value="SSC CGL">SSC CGL</option>
+                            <option value="GATE">GATE</option>
+                            <option value="CAT">CAT</option>
+                            <option value="IBPS">IBPS</option>
+                            <option value="RRB">RRB</option>
+                            <option value="CUET">CUET</option>
+                            <option value="CLAT">CLAT</option>
+                        </select>
+
+                        <!-- Requirements Display -->
+                        <div id="requirements" class="requirements-warm hidden">
+                            <div class="requirements-grid">
+                                <div class="req-card-warm photo-req">
+                                    <div class="req-icon">📷</div>
+                                    <h5>Photo Requirements</h5>
+                                    <ul id="photoReqs"></ul>
+                                </div>
+                                <div class="req-card-warm signature-req">
+                                    <div class="req-icon">✍️</div>
+                                    <h5>Signature Requirements</h5>
+                                    <ul id="signatureReqs"></ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2: Upload Photo -->
+                <div class="tool-card photo-upload-card" id="photoSection">
+                    <div class="card-header">
+                        <div class="step-indicator step-blue">2</div>
+                        <h3>Upload Photo</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="upload-area-warm photo-upload" id="photoUploadArea">
+                            <div class="upload-icon-warm">📷</div>
+                            <p class="upload-text-warm">Drop your photo here</p>
+                            <button type="button" class="btn-warm btn-warm-primary" id="photoUploadBtn">
+                                Choose Photo File
+                            </button>
+                            <input type="file"
+                                   id="photoInput"
+                                   accept="image/jpeg,image/jpg,image/png"
+                                   style="display: none;">
+                            <p class="upload-hint-warm">JPG/PNG • Max 10MB</p>
+                        </div>
+
+                        <div id="photoPreview" class="preview-warm hidden">
+                            <div class="preview-comparison">
+                                <div class="preview-item original">
+                                    <h6>Original</h6>
+                                    <img id="originalPhoto" alt="Original photo">
+                                    <p id="originalPhotoInfo" class="preview-info"></p>
+                                </div>
+                                <div class="arrow-indicator">→</div>
+                                <div class="preview-item processed">
+                                    <h6>Resized</h6>
+                                    <img id="resizedPhoto" alt="Resized photo">
+                                    <p id="resizedPhotoInfo" class="preview-info"></p>
+                                    <button class="btn-warm btn-warm-success" id="downloadPhoto" disabled>
+                                        ⬇️ Download Photo
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3: Upload Signature -->
+                <div class="tool-card signature-upload-card" id="signatureSection">
+                    <div class="card-header">
+                        <div class="step-indicator step-teal">3</div>
+                        <h3>Upload Signature</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="upload-area-warm signature-upload" id="signatureUploadArea">
+                            <div class="upload-icon-warm">✍️</div>
+                            <p class="upload-text-warm">Drop your signature here</p>
+                            <button type="button" class="btn-warm btn-warm-secondary" id="signatureUploadBtn">
+                                Choose Signature File
+                            </button>
+                            <input type="file"
+                                   id="signatureInput"
+                                   accept="image/jpeg,image/jpg,image/png"
+                                   style="display: none;">
+                            <p class="upload-hint-warm">JPG/PNG • Max 10MB</p>
+                        </div>
+
+                        <div id="signaturePreview" class="preview-warm hidden">
+                            <div class="preview-comparison">
+                                <div class="preview-item original">
+                                    <h6>Original</h6>
+                                    <img id="originalSignature" alt="Original signature">
+                                    <p id="originalSignatureInfo" class="preview-info"></p>
+                                </div>
+                                <div class="arrow-indicator">→</div>
+                                <div class="preview-item processed">
+                                    <h6>Resized</h6>
+                                    <img id="resizedSignature" alt="Resized signature">
+                                    <p id="resizedSignatureInfo" class="preview-info"></p>
+                                    <button class="btn-warm btn-warm-success" id="downloadSignature" disabled>
+                                        ⬇️ Download Signature
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Additional Content Below the Fold -->
+    <section class="below-fold-warm">
+        <div class="container">
+
+            <!-- Quick Features -->
+            <div class="features-warm">
+                <h2 class="section-title-warm">Why Students Trust Our Tool</h2>
+                <div class="features-grid-warm">
+                    <div class="feature-card-warm">
+                        <div class="feature-icon-warm">⚡</div>
+                        <h4>Instant Processing</h4>
+                        <p>Get perfectly resized images in under 5 seconds</p>
+                    </div>
+                    <div class="feature-card-warm">
+                        <div class="feature-icon-warm">🎯</div>
+                        <h4>Exam Specific</h4>
+                        <p>Pre-configured for all major competitive exams</p>
+                    </div>
+                    <div class="feature-card-warm">
+                        <div class="feature-icon-warm">🔒</div>
+                        <h4>100% Private</h4>
+                        <p>Images processed locally, never uploaded to servers</p>
+                    </div>
+                    <div class="feature-card-warm">
+                        <div class="feature-icon-warm">🆓</div>
+                        <h4>Always Free</h4>
+                        <p>No charges, watermarks, or registration required</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Supported Exams -->
+            <div class="supported-exams-warm">
+                <h2 class="section-title-warm">Supported Competitive Exams</h2>
+                <div class="exams-grid-warm">
+                    <div class="exam-badge-warm medical" data-exam="NEET">NEET</div>
+                    <div class="exam-badge-warm engineering" data-exam="JEE Main">JEE Main</div>
+                    <div class="exam-badge-warm civil" data-exam="UPSC">UPSC</div>
+                    <div class="exam-badge-warm banking" data-exam="SSC CGL">SSC CGL</div>
+                    <div class="exam-badge-warm technical" data-exam="GATE">GATE</div>
+                    <div class="exam-badge-warm management" data-exam="CAT">CAT</div>
+                    <div class="exam-badge-warm banking" data-exam="IBPS">IBPS</div>
+                    <div class="exam-badge-warm railway" data-exam="RRB">RRB</div>
+                    <div class="exam-badge-warm university" data-exam="CUET">CUET</div>
+                    <div class="exam-badge-warm law" data-exam="CLAT">CLAT</div>
+                </div>
+            </div>
+
+            <!-- How It Works -->
+            <div class="how-it-works-warm">
+                <h2 class="section-title-warm">How It Works</h2>
+                <div class="steps-flow">
+                    <div class="step-flow-item">
+                        <div class="flow-icon">🎯</div>
+                        <h4>Choose Exam</h4>
+                        <p>Select your target exam from the dropdown</p>
+                    </div>
+                    <div class="flow-arrow">→</div>
+                    <div class="step-flow-item">
+                        <div class="flow-icon">📁</div>
+                        <h4>Upload Images</h4>
+                        <p>Drop or browse your photo and signature files</p>
+                    </div>
+                    <div class="flow-arrow">→</div>
+                    <div class="step-flow-item">
+                        <div class="flow-icon">✨</div>
+                        <h4>Get Results</h4>
+                        <p>Download perfectly sized images instantly</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Warm Toast Messages -->
+    <div id="successToast" class="toast-warm toast-warm-success hidden">
+        <div class="toast-content-warm">
+            <span class="toast-icon-warm">✅</span>
+            <span class="toast-message">Success message</span>
+        </div>
+    </div>
+
+    <div id="errorToast" class="toast-warm toast-warm-error hidden">
+        <div class="toast-content-warm">
+            <span class="toast-icon-warm">❌</span>
+            <span class="toast-message">Error message</span>
+        </div>
+    </div>
+
+    <!-- Processing Modal -->
+    <div id="processingModal" class="modal-warm hidden">
+        <div class="modal-content-warm">
+            <div class="processing-animation-warm">
+                <div class="spinner-warm"></div>
+            </div>
+            <h3>Processing Your Image...</h3>
+            <p>Creating perfect exam-ready photos</p>
+        </div>
+    </div>
+
+    <!-- Warm Footer -->
+    <footer class="footer-warm">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Exam Photo Resizer | Free tool for Indian competitive exam applications</p>
+                <div class="footer-links">
+                    <span>✨ Made with care for students</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
